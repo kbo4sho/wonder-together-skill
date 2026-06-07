@@ -1,0 +1,21 @@
+{
+  "name": "wonder-together",
+  "interface": {
+    "displayName": "Wonder Together"
+  },
+  "plugins": [
+    {
+      "name": "wonder-together-skill",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/kbo4sho/wonder-together-skill.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}
