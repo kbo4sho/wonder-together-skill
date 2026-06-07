@@ -1,0 +1,11 @@
+{
+  "name": "wonder-together-skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Codex plugin distribution package for the Wonder Together Agent Skill.",
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "license": "MIT"
+}
