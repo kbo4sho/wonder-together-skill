@@ -293,9 +293,21 @@ Parent context, optional:</textarea
         } catch {}
 
         try {
-          promptText.focus();
-          promptText.select();
-          if (document.execCommand("copy")) {
+          const fallback = document.createElement("textarea");
+          fallback.value = text;
+          fallback.setAttribute("readonly", "");
+          fallback.style.position = "fixed";
+          fallback.style.top = "0";
+          fallback.style.left = "0";
+          fallback.style.width = "1px";
+          fallback.style.height = "1px";
+          fallback.style.opacity = "0";
+          document.body.appendChild(fallback);
+          fallback.focus();
+          fallback.select();
+          const copied = document.execCommand("copy");
+          fallback.remove();
+          if (copied) {
             showCopyState("Copied");
             return;
           }
