@@ -2,7 +2,8 @@
 
 This folder is the portable Wonder Together Agent Skill source.
 
-Use it to create parent-mediated learning packets from a child's question.
+Use it to create compact parent-mediated single-scene visual explainers from a
+child's question.
 
 ## Codex
 
@@ -14,7 +15,12 @@ Invoke explicitly:
 $wonder-together
 ```
 
-Or ask for a Wonder Together packet, parent guide, visual explainer, or shared learning moment from a child question.
+Or ask for a Wonder Together visual explainer, parent guide, image prompt, or
+shared learning moment from a child question. Ask explicitly for a fuller packet
+when you want a story, longer explanation, game, or follow-up sections.
+
+For the current output shape, see
+[`../../docs/what-the-skill-produces.md`](../../docs/what-the-skill-produces.md).
 
 ## Claude
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Wonder Together"
-  short_description: "Create parent-mediated Wonder Together learning packets."
-  default_prompt: "Use $wonder-together to turn a child question into a parent-led learning packet."
+  short_description: "Create compact parent-led single-scene visual explainers."
+  default_prompt: "Use $wonder-together to turn a child question into one single-scene parent-led visual explainer."

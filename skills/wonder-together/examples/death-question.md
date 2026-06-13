@@ -7,54 +7,39 @@ Input:
 
 Output:
 
-# Wonder Together Packet
+# Wonder Together Visual Explainer
 
 ## Core idea
 
-Living bodies can only keep working for a while. Death means a body has stopped working and cannot start again.
+Living bodies can only keep working for a while. Death means a body has stopped
+working and cannot start again.
 
-## Story to read together
+## Explainer image
 
-Maya found a dry leaf on the sidewalk. It had once been soft and green, but now it was brown and quiet in her hand.
+Skip generated images by default for this question. If the parent asks for one
+gentle symbolic visual later, use:
 
-`Did the leaf die?` Maya asked.
+`A quiet hand-drawn memory box on a kitchen table with a dry leaf, a small photo frame turned away from view, and warm soft light. Gentle and calm, not cheerful, no literal death scene, no medical imagery, no frightening imagery, no forced character scene, no poster title, no brand text.`
 
-Dad sat beside her on the step. `Yes. The leaf was alive when it was part of the tree. Now it is not alive anymore. Living things need their bodies to keep working. When a body cannot work anymore, that living thing dies.`
+## What to notice
 
-Maya held the leaf carefully. `Do people die too?`
-
-`Yes,` Dad said gently. `People die too. We do not know exactly when, and the grownups around you are caring for you right now. You can always ask me questions about it.`
-
-Maya leaned against him for a while. Dad did not rush her into feeling better. He just stayed close.
-
-## Explain it simply
-
-People are alive because their bodies do many jobs: breathing, pumping blood, thinking, healing, and growing. Death means the body has stopped doing the jobs that keep a person alive. When someone dies, they do not feel hungry, scared, sleepy, or hurt anymore, because their body is not working.
-
-It is normal for this question to feel big. The grownup does not need to explain everything at once.
-
-## Visuals
-
-Skip generated images for this packet by default. If the parent wants one gentle symbolic image later, use: `A quiet hand-drawn memory box on a kitchen table with a leaf, a small photo frame turned away from view, and a candle-like warm light. Gentle, not cheerful, no literal death scene, no medical imagery.`
+- Use clear words like `die` and `death`.
+- Keep the answer small and honest.
+- Do not rush the child toward feeling better.
 
 ## Try it together
 
-Use a quiet conversation script.
-
-Parent: `What part feels confusing or scary?`
-
-Child answers.
-
-Parent: `Thank you for telling me. I can answer a little at a time. You are not in trouble for asking.`
-
-If the child wants something to do, draw a `remembering picture` of someone, a pet, a plant, or a season that changed. Do not force the activity.
+Use a quiet question: `What part feels confusing or scary?` Then answer one
+small piece at a time. If the child wants something to do, draw a remembering
+picture. Do not force the activity.
 
 ## Parent note
 
-Use clear words like `die` and `death`. Avoid `went to sleep`, because young children may become afraid of sleep. Avoid promising that no one close will die soon unless you have specific context and are comfortable saying it. It is enough to be honest, calm, and present.
+Avoid `went to sleep`, because young children may become afraid of sleep. Safer
+wording is: `We do not know exactly when, and the grownups around you are caring
+for you right now.`
 
-## Follow-up questions
+## Want more?
 
-1. What do you want to know more about?
-2. What part feels sad, scary, or confusing?
-3. Would you like a hug, a quiet minute, or another question?
+Ask for a fuller tender-topic packet if you want a read-aloud script, more
+parent language, or help adapting this to your family's beliefs.
