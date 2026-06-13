@@ -51,9 +51,12 @@ Together:
 ## Visual Style
 
 - Hand-drawn dark ink linework.
-- Soft field-guide palette: cream, sky blue, moon yellow, leaf green, clay, berry, warm gray.
+- Mostly neutral palette: dark ink, warm cream paper, warm gray washes, and
+  other low-saturation field-guide fills.
 - Simple fills with light paper texture if available.
-- One or two accent colors per image.
+- Keep character fills quiet and neutral; put full-color emphasis on the
+  explanation layer instead: arrows, paths, labels, active mechanisms, and
+  safety signals.
 - Sparse labels and arrows.
 - Bear-adjacent cues should be readable at small sizes: ear nubs, warm rounded posture, tiny muzzle/nose mark, simple paw-like hands/feet.
 
@@ -78,4 +81,4 @@ Together:
 
 Use this wording when asking for generated visuals:
 
-`Include the Wonder Together recurring pair: Big Wonderer and Little Wonderer. They are gender-neutral, nonhuman minimal diagram actors with gentle bear-adjacent cues: rounded pebble/capsule silhouettes, tiny rounded ear nubs, tiny dot-eyes, a subtle muzzle or nose dash, mitten-like paw simplicity, dark hand-drawn linework, and soft field-guide colors. Big Wonderer is taller and steady, standing protectively beside or behind Little Wonderer. Little Wonderer is smaller and curious, looking toward the concept. Keep them subtle and consistent; do not make them mascots, humans, literal bears, teddy toys, blob-character copies, posters, or title-card figures.`
+`Include the Wonder Together recurring pair: Big Wonderer and Little Wonderer. They are gender-neutral, nonhuman minimal diagram actors with gentle bear-adjacent cues: rounded pebble/capsule silhouettes, tiny rounded ear nubs, tiny dot-eyes, a subtle muzzle or nose dash, mitten-like paw simplicity, dark hand-drawn linework, and a mostly neutral ink/cream/warm-gray palette with muted field-guide fills. Keep the pair visually quiet; reserve clear full-color accents for the explainer layer, such as arrows, paths, labels, active mechanisms, and safety cues. Big Wonderer is taller and steady, standing protectively beside or behind Little Wonderer. Little Wonderer is smaller and curious, looking toward the concept. Keep them subtle and consistent; do not make them mascots, humans, literal bears, teddy toys, blob-character copies, posters, or title-card figures.`
