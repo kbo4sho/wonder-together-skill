@@ -144,6 +144,10 @@ h1 {
   padding-bottom: 0.05em;
 }
 
+.hero-line {
+  display: block;
+}
+
 h2 {
   margin: 0;
   font-size: 2.35rem;
