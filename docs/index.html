@@ -23,54 +23,76 @@
     <header class="site-header">
       <a class="brand" href="./">Wonder Together</a>
       <nav class="nav" aria-label="Primary">
-        <a href="#sample">Sample</a>
-        <a href="#use">Use it</a>
-        <a href="#prompt">Prompt</a>
-        <a href="https://github.com/kbo4sho/wonder-together-skill">GitHub</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#sample">Example</a>
+        <a class="nav-button" href="#use">Use the skill</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <div>
-          <p class="eyebrow">A parent-facing skill</p>
-          <h1>Make every &ldquo;why?&rdquo; a moment together.</h1>
+        <div class="hero-copy">
+          <p class="eyebrow">For parents with curious kids</p>
+          <h1>Make every <span class="hand-underline">&ldquo;why?&rdquo;</span><br />a moment together.</h1>
           <p class="lede">
             Wonder Together helps a grownup answer a child&rsquo;s question with
             one clear image, a few things to notice, and one tiny way to try the
             idea together. Less output first, more shared attention.
           </p>
           <div class="cta-row">
-            <a class="button primary" href="#prompt">Copy the prompt</a>
+            <a class="button primary" href="#use">Use the skill <span aria-hidden="true">-&gt;</span></a>
+            <a class="text-link" href="#prompt">Copy the skill prompt</a>
             <a
-              class="button"
-              href="https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together"
+              class="text-link"
+              href="#sample"
             >
-              Open the Custom GPT
+              See a real example
             </a>
           </div>
           <p class="hero-note">
-            Portable Agent Skill source, public prompt, and sample visual
-            package in one repo.
+            Free to use &middot; For ages 3-12 &middot; A free parent skill for curious kids and their grownups.
           </p>
         </div>
 
-        <figure class="artifact" id="sample">
-          <img
-            src="assets/wonder-together-moon-explainer-single-scene.png"
-            alt="Wonder Together sample image showing Big Wonderer and Little Wonderer in a car, nearby things shifting quickly, and the far moon barely shifting."
-            width="1536"
-            height="1024"
-          />
-          <figcaption>
-            Sample artifact: one generated scene explains why the moon seems to
-            follow the car, while keeping the grownup and child together in the
-            picture.
-          </figcaption>
-        </figure>
+        <aside class="sample-card-shell" aria-label="Wonder Together example">
+          <div class="sample-card-badge">~30 seconds</div>
+          <article class="sample-card" id="sample">
+            <p class="sample-card-kicker">Free parent skill</p>
+            <h2>Why does the moon follow us when we drive?</h2>
+            <p class="sample-card-meta">For Leo, age 6</p>
+            <figure class="artifact">
+              <img
+                src="assets/wonder-together-moon-explainer-single-scene.png"
+                alt="Wonder Together sample image showing Big Wonderer and Little Wonderer in a car, nearby things shifting quickly, and the far moon barely shifting."
+                width="1536"
+                height="1024"
+              />
+              <figcaption>
+                Generated image first: one scene, a few labels, clear
+                mechanism.
+              </figcaption>
+            </figure>
+            <div class="sample-card-notes">
+              <p><strong>Core idea:</strong> far things barely move when you do.</p>
+              <p>
+                <strong>Try it:</strong> thumb near your face, toy across the
+                room, then step sideways.
+              </p>
+            </div>
+          </article>
+        </aside>
       </section>
 
-      <section class="band">
+      <section class="band intro-band">
+        <div class="quote-block">
+          <p>
+            A child asks a huge question. You get one warm image, a few things to
+            notice, and a tiny way to try the idea together.
+          </p>
+        </div>
+      </section>
+
+      <section class="feature-section" id="how-it-works">
         <div class="section-inner split">
           <div>
             <p class="kicker">What it gives you</p>
