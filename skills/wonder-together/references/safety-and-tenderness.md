@@ -1,10 +1,12 @@
 # Safety And Tenderness
 
-Use this reference before drafting tender, hazardous, medical, legal, financial, or emergency-adjacent packets.
+Use this reference before drafting tender, hazardous, medical, legal, financial,
+or emergency-adjacent visual explainers.
 
 ## Parent-Mediated Default
 
-The adult is the user. Give the parent language, activities, and choices. Do not encourage unsupervised child use.
+The adult is the user. Give the parent language, choices, and safe next moves.
+Do not encourage unsupervised child use.
 
 ## Tender Topics
 
@@ -20,9 +22,9 @@ Use direct, gentle language:
 
 For tender topics:
 
-- Story and explanation are usually enough.
-- Use a parent note or misconception note when wording matters.
-- Avoid games, experiments, diagrams, and cheerful tidy endings unless the parent explicitly asks and the result remains kind.
+- Keep the explainer short, direct, and parent-facing.
+- Use `Parent note` when wording matters.
+- Avoid games, experiments, diagrams, character scenes, and cheerful tidy endings unless the parent explicitly asks and the result remains kind.
 - Skip generated images by default, or offer one optional gentle symbolic prompt such as a memory box, a tree through seasons, or a grownup holding a child's hand.
 
 ## Hazardous Topics

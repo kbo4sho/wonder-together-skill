@@ -7,60 +7,38 @@ Input:
 
 Output:
 
-# Wonder Together Packet
+# Wonder Together Visual Explainer
 
 ## Core idea
 
-The moon looks like it follows the car because it is very far away. Close things race past your window, but far things barely seem to move.
+The moon looks like it follows the car because it is very far away. Close things
+race past your window, but far things barely seem to move.
 
-## Story to read together
+## Explainer image
 
-Leo pressed his face near the car window. Mailboxes zipped by. Trees blurred into green stripes. But the moon stayed bright and round over the road.
+Generate exactly one image:
 
-`Grandma, the moon is following us,` Leo said.
+`Hand-drawn Wonder Together single-scene explainer image. One coherent night car-window scene, not panels or numbered steps. Big Wonderer and Little Wonderer sit together in the back seat, with Big Wonderer slightly behind and beside Little Wonderer, calm and protective. Little Wonderer looks out at the moon. The same scene includes light diagram cues: nearby trees, signs, and porch lights streak past the window with a short label "close = big shift"; the far moon stays steady with a short label "far = tiny shift"; a simple dashed sightline from the window to the moon helps show why the moon seems to follow. Keep all cues integrated into the single scene, like a refined whiteboard field-guide sketch. The real concept is close-versus-far parallax, so keep the moon, foreground motion, and shared parent-child gaze clear. Gender-neutral nonhuman Big/Little Wonderer pair with rounded pebble silhouettes, tiny ear nubs, dot eyes, subtle muzzle or nose dash, mitten-like simple paws, dark hand-drawn linework, soft field-guide colors on warm cream paper. No poster title, no worksheet, no storyboard, no split panels, no numbered labels, no brand text, no mascot pose, no copied blob-character style, no long labels.`
 
-Grandma smiled. `Let's be moon detectives. Hold your thumb up near the window and line it up with that far streetlight. Now move your head just a little.`
+## What to notice
 
-Leo's thumb jumped across the window, but the streetlight barely moved.
-
-`Close things jump when we move,` Grandma said. `Far things seem to stay still. The moon is much farther than that streetlight, so it looks like it is riding with us.`
-
-Leo looked back at the moon. It was not chasing the car. It was just wonderfully far away.
-
-## Explain it simply
-
-When your car moves, nearby things change place in your view quickly. A fence, tree, or mailbox is close, so it slides across the window fast. The moon is so far away that your car ride is tiny compared with the distance to the moon. Your view of it changes only a little, so it seems to stay beside you.
-
-That close-versus-far trick is called parallax.
-
-## Visuals
-
-Best first visual: an explanation diagram showing a car window, close trees sliding fast, and the far moon barely shifting.
-
-Generate or brief it as: `Hand-drawn Wonder Together explanation diagram. A child and grownup look from a car window. Nearby trees and signs slide quickly across the foreground with simple arrows. The far moon stays nearly in the same place with a small calm arrow. Soft field-guide colors, clear spacing, no poster title, no mascot.`
-
-Optional follow-up visuals:
-
-- Generate the story scene.
-- Generate the thumb-and-streetlight activity visual.
+- Close trees and signs seem to slide a lot when the car moves.
+- The moon is much farther away, so it barely seems to shift.
+- Big Wonderer and Little Wonderer are looking at the same thing, figuring it
+  out together.
 
 ## Try it together
 
-Do the thumb test.
-
-1. Hold your thumb up near your face.
-2. Line it up with a toy or lamp across the room.
-3. Move your head a little side to side.
-4. Notice that your thumb seems to jump more than the far object.
-
-Say: `Close things seem to move more when we move. Far things seem to move less.`
+Do the thumb test: hold your thumb near your face, line it up with a toy across
+the room, then move your head a little. Your thumb seems to jump, but the far
+toy barely moves.
 
 ## Parent note
 
-Keep the magic while adding the model. A good response is: `It really does look like the moon is coming with us. That is your eyes noticing something real about near and far things.`
+Keep the magic while adding the model: `It really does look like the moon is
+coming with us. Your eyes noticed something real about near and far things.`
 
-## Follow-up questions
+## Want more?
 
-1. Does the sun do the same thing?
-2. Why does the moon change shape?
-3. How far away is the moon?
+Ask for a fuller packet if you want a read-aloud story, a longer explanation, or
+an extra activity visual.
