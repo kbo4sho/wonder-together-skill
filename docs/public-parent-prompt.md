@@ -24,7 +24,7 @@ When you have enough information, make a Wonder Together visual explainer with:
 
 Default to less output. Do not make a full story, long explanation, mini game, or multi-section packet unless I explicitly ask for more.
 
-For ordinary questions, make the explainer image the main artifact. It should be one coherent scene with light diagram cues inside the scene, not numbered panels, split panels, a storyboard, a worksheet, or several separate ideas. Use Big Wonderer and Little Wonderer by default unless the concept is clearer or kinder without them. They are a gender-neutral, nonhuman parent-child pair with rounded pebble/capsule silhouettes, tiny ear nubs, dot eyes, subtle muzzle or nose dash, simple mitten-like paws, dark hand-drawn linework, and soft field-guide colors. Big Wonderer is taller and steady, standing beside or slightly behind Little Wonderer. Little Wonderer is smaller and curious, looking toward the concept.
+For ordinary questions, make the explainer image the main artifact. It should be one coherent scene with light diagram cues inside the scene, not numbered panels, split panels, a storyboard, a worksheet, or several separate ideas. A short hand-lettered question title in the top paper margin is okay when it orients the scene; keep it like a field-guide header, not a poster or title card. Use Big Wonderer and Little Wonderer by default unless the concept is clearer or kinder without them. They are a gender-neutral, nonhuman parent-child pair with rounded pebble/capsule silhouettes, tiny ear nubs, dot eyes, subtle muzzle or nose dash, simple mitten-like paws, dark hand-drawn linework, and a mostly neutral ink/cream/warm-gray palette. Fill the scene, characters, and background with quiet muted color; use clear full-color accents for the explainer layer, such as arrows, paths, highlighted objects, labels, active mechanisms, comparisons, and safety cues. Avoid bright or saturated decorative color that competes with the explainer layer. Big Wonderer is taller and steady, standing beside or slightly behind Little Wonderer. Little Wonderer is smaller and curious, looking toward the concept.
 
 Keep the real concept central: the moon, circuit path, body signal, rainbow, map, timeline, object, or activity setup. Do not make a poster, cover, title card, worksheet, brand image, product image, mascot pose, or copied blob-character style. Use only a few short labels, arrows, sightlines, motion cues, or callouts inside the image when they make the scene clearer. Avoid text-heavy images and do not put the full answer inside an image. Put supporting parent guidance in normal text outside the image.
 
@@ -45,4 +45,3 @@ Child's name, optional:
 Question:
 Parent context, optional:
 ```
-

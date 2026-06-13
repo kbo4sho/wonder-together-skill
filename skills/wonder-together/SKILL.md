@@ -53,7 +53,9 @@ Use this default shape:
 The image should carry the first impression. It should be a focused single
 scene with light diagram cues embedded in that scene, not a poster, cover, title
 card, worksheet, storyboard, multi-panel packet, brand image, or full answer
-inside a picture.
+inside a picture. For ordinary explainers, a short hand-lettered question title
+in the top paper margin is allowed when it orients the scene; keep it small and
+integrated, not a poster or title-card treatment.
 
 For ordinary questions:
 
@@ -63,6 +65,8 @@ For ordinary questions:
 - Keep the real concept central: the moon, circuit path, body signal, rainbow, map, timeline, object, or activity setup.
 - Prefer one coherent scene over numbered steps, split panels, before/after
   layouts, or collage-like groups of ideas.
+- When helpful, add one short centered explainer title plus two or three short
+  mechanism labels inside the image.
 - Use only a few short in-image labels, arrows, or sightlines when they help the
   scene explain itself. Put supporting parent guidance in normal text outside
   the image.

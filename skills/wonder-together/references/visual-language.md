@@ -10,11 +10,29 @@ poster and not a full packet.
 - Consistent `Big Wonderer` and `Little Wonderer` diagram actors as the default parent-child anchor for ordinary explainers. See [character-system.md](character-system.md).
 - Simple diagram cues that a child can inspect inside one scene: arrows, paths,
   sightlines, layers, scale cues, maps, timelines, and comparisons.
-- Soft field-guide colors: ink, cream, sky blue, leaf green, warm yellow, clay, berry, and muted red for caution.
+- Clarity-first color hierarchy: keep the scene, characters, and background
+  in muted filled washes: dark ink, warm cream paper, warm gray, and other
+  low-saturation field-guide color. Use clear full-color accents for the
+  explainer layer: arrows, paths, labels, active mechanisms, comparisons, and
+  safety cues.
 - Hand-drawn linework, slightly imperfect but clear.
 - Spacious composition with one main idea per image.
 - A few short in-image labels can name the mechanism when useful, but the
   generated image should not depend on long or exact text.
+- Ordinary explainers may use one centered, hand-lettered question title in the
+  top paper margin, such as "Why the moon seems to follow". Treat it like a
+  field-guide header, not a poster title, cover, brand mark, or title card.
+
+## Image Copy
+
+- Use a small amount of readable copy: one short title/question when useful,
+  plus two or three labels that name the mechanism.
+- Keep labels concrete and comparative, such as "near = big shift" and
+  "far = tiny shift".
+- Place copy into the scene like field notes, underlines, arrows, sightlines, or
+  motion marks. Do not turn the image into a worksheet or text-heavy answer.
+- If exact generated text quality matters, keep the title and labels short and
+  put the fuller explanation outside the image.
 
 ## Visual Types
 
@@ -41,9 +59,13 @@ Mention optional follow-up images only in `Want more?`.
 
 - Copy, adapt, or imitate the Xiaohei character or blob-figure identity.
 - Create a recurring Wonder Together mascot that takes over the explanation; Big/Little Wonderer should reinforce the parent-child relationship while the concept remains central.
-- Generate generic posters, covers, title cards, product images, worksheets, or overview graphics unless asked.
+- Generate generic posters, covers, title cards, product images, worksheets, or overview graphics unless asked. A small field-guide-style explainer title is still allowed for ordinary images.
 - Put the full packet inside an image.
 - Split the default image into numbered panels, storyboards, before/after
   boards, or multiple separate ideas.
 - Depend on long or exact words inside generated images.
 - Generate multiple images by default.
+- Use bright, saturated, or decorative color across the scene. Muted scene-wide
+  color fills are welcome when they stay quiet; reserve stronger color for the
+  parts that explain: arrows, paths, highlighted objects, labels, contrast
+  marks, maps, signal paths, rainbows, or safety cues.

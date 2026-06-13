@@ -14,6 +14,7 @@
   --sky-line: #a7cbdc;
   --card-shadow: 0 1px 0 rgba(34, 28, 14, 0.04), 0 24px 60px -30px rgba(34, 28, 14, 0.32);
   --hover-shadow: 0 1px 0 rgba(34, 28, 14, 0.04), 0 16px 40px -14px rgba(34, 28, 14, 0.22);
+  --content-max: 108rem;
 }
 
 * {
@@ -53,7 +54,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
-  max-width: 116rem;
+  max-width: var(--content-max);
   margin: 0 auto;
   padding: 1.25rem;
 }
@@ -98,18 +99,18 @@ textarea {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(28rem, 0.92fr);
+  grid-template-columns: minmax(0, 1fr) minmax(24rem, 39rem);
   align-items: start;
-  gap: 8rem;
-  max-width: 116rem;
+  gap: clamp(3rem, 5vw, 5.75rem);
+  max-width: var(--content-max);
   min-height: calc(100vh - 5rem);
   margin: 0 auto;
-  padding: 10rem 1.25rem 5rem;
+  padding: clamp(4.5rem, 10vh, 10rem) 1.25rem clamp(4rem, 7vh, 5rem);
 }
 
 .hero-copy {
   min-width: 0;
-  margin-top: 12rem;
+  margin-top: clamp(3rem, 11vh, 12rem);
 }
 
 .eyebrow,
@@ -134,7 +135,7 @@ h3 {
 h1 {
   max-width: 58rem;
   margin: 1.35rem 0 0;
-  font-size: 4.15rem;
+  font-size: clamp(4.15rem, 5vw, 6.15rem);
   line-height: 1.05;
 }
 
@@ -230,7 +231,7 @@ h3 {
 .sample-card-shell {
   position: relative;
   width: 100%;
-  max-width: 48rem;
+  max-width: 39rem;
   justify-self: end;
 }
 
@@ -356,13 +357,24 @@ h3 {
 }
 
 .section-inner {
-  max-width: 72rem;
+  max-width: var(--content-max);
   margin: 0 auto;
   padding: 5.5rem 1.25rem;
 }
 
 .feature-section {
   background: var(--paper);
+}
+
+.section-heading {
+  max-width: 43rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-heading .body-copy {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .split {
@@ -381,8 +393,9 @@ h3 {
 
 .output-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 .output-item,
@@ -456,8 +469,9 @@ h3 {
   overflow-x: auto;
   padding: 1rem;
   font-size: 0.9rem;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
   white-space: pre-wrap;
+  word-break: normal;
 }
 
 .prompt-tools {
@@ -465,7 +479,7 @@ h3 {
   flex-wrap: wrap;
   gap: 0.75rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 1.5rem;
 }
 
@@ -513,7 +527,6 @@ h3 {
   }
 
   h1 {
-    font-size: 6.15rem;
     line-height: 1.03;
   }
 }
@@ -535,7 +548,12 @@ h3 {
   }
 
   .sample-card-shell {
+    max-width: min(38rem, 100%);
     justify-self: center;
+  }
+
+  .output-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
