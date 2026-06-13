@@ -119,7 +119,7 @@ async function main() {
   ]);
 
   await requireContains("docs/index.html", [
-    "Make every <span class=\"hand-underline\">&ldquo;why?&rdquo;</span><br />a moment together.",
+    "Make every <span class=\"hand-underline\">&ldquo;why?&rdquo;</span> <span class=\"hero-line\">a moment together.</span>",
     "assets/wonder-together-moon-explainer-single-scene.png",
     "codex plugin marketplace add kbo4sho/wonder-together-skill --ref main",
     "https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together",
