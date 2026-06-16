@@ -7,7 +7,9 @@ poster and not a full packet.
 ## Original Style
 
 - Warm parent-child scenes, everyday rooms, windows, sidewalks, kitchen tables, libraries, parks, and car rides.
-- Consistent `Big Wonderer` and `Little Wonderer` diagram actors as the default parent-child anchor for ordinary explainers. See [character-system.md](character-system.md).
+- Consistent `Big Wonderer` and `Little Wonderer` Pebble Guides as the
+  default parent-child anchor for ordinary explainers. See
+  [character-system.md](character-system.md) for the canonical look.
 - Simple diagram cues that a child can inspect inside one scene: arrows, paths,
   sightlines, layers, scale cues, maps, timelines, and comparisons.
 - Clarity-first color hierarchy: keep the scene, characters, and background
@@ -59,6 +61,8 @@ Mention optional follow-up images only in `Want more?`.
 
 - Copy, adapt, or imitate the Xiaohei character or blob-figure identity.
 - Create a recurring Wonder Together mascot that takes over the explanation; Big/Little Wonderer should reinforce the parent-child relationship while the concept remains central.
+- Drift into literal bear-family, teddy-toy, sticker, poster, or product-graphic
+  character styling. The pair should read as quiet rounded pebble guides.
 - Generate generic posters, covers, title cards, product images, worksheets, or overview graphics unless asked. A small field-guide-style explainer title is still allowed for ordinary images.
 - Put the full packet inside an image.
 - Split the default image into numbered panels, storyboards, before/after

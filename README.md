@@ -18,8 +18,11 @@ https://kbo4sho.github.io/wonder-together-skill/
 ```
 
 It explains the problem Wonder Together solves, shows the primary single-scene
-moon explainer image, links the Custom GPT, and includes the portable prompt
-from [`docs/public-parent-prompt.md`](docs/public-parent-prompt.md).
+moon explainer image, links the Custom GPT, and points users toward supported
+platform paths. The portable prompt remains available for maintainers at
+[`docs/public-parent-prompt.md`](docs/public-parent-prompt.md).
+The repo-side Custom GPT instruction source lives at
+[`skills/wonder-together/agents/openai.yaml`](skills/wonder-together/agents/openai.yaml).
 
 ## What It Does
 

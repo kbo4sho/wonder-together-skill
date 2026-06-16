@@ -3,6 +3,13 @@ import path from "node:path";
 
 const root = process.cwd();
 const sampleImagePath = "docs/assets/wonder-together-moon-explainer-single-scene.png";
+const sampleWebpImagePath = "docs/assets/wonder-together-moon-explainer-single-scene.webp";
+const supportImagePaths = [
+  "docs/assets/wonder-together-wall-samples.png"
+];
+const supportWebpImagePaths = [
+  "docs/assets/wonder-together-wall-samples.webp"
+];
 
 async function readJson(relativePath) {
   const fullPath = path.join(root, relativePath);
@@ -30,20 +37,21 @@ async function requireContains(relativePath, snippets) {
   }
 }
 
-async function requirePublicPromptMirrored() {
+async function requireNotContains(relativePath, snippets) {
+  const content = await readFile(path.join(root, relativePath), "utf8");
+  for (const snippet of snippets) {
+    if (content.includes(snippet)) {
+      throw new Error(`${relativePath} must not include: ${snippet}`);
+    }
+  }
+}
+
+async function requirePublicPromptTextBlock() {
   const markdown = await readFile(path.join(root, "docs/public-parent-prompt.md"), "utf8");
-  const page = await readFile(path.join(root, "docs/index.html"), "utf8");
   const markdownMatch = markdown.match(/```text\n([\s\S]*?)\n```/);
-  const pageMatch = page.match(/<textarea class="prompt-box" id="promptText" readonly>\n([\s\S]*?)<\/textarea\s*>/);
 
   if (!markdownMatch) {
     throw new Error("docs/public-parent-prompt.md must include one text code block");
-  }
-  if (!pageMatch) {
-    throw new Error("docs/index.html must include the copyable prompt textarea");
-  }
-  if (markdownMatch[1].trim() !== pageMatch[1].trim()) {
-    throw new Error("docs/index.html prompt textarea must match docs/public-parent-prompt.md");
   }
 }
 
@@ -59,6 +67,13 @@ async function requirePngDimensions(relativePath, expectedWidth, expectedHeight)
   const height = image.readUInt32BE(20);
   if (width !== expectedWidth || height !== expectedHeight) {
     throw new Error(`${relativePath} must be ${expectedWidth}x${expectedHeight}px`);
+  }
+}
+
+async function requireWebpFile(relativePath) {
+  const image = await readFile(path.join(root, relativePath));
+  if (image.subarray(0, 4).toString("ascii") !== "RIFF" || image.subarray(8, 12).toString("ascii") !== "WEBP") {
+    throw new Error(`${relativePath} must be a WEBP image`);
   }
 }
 
@@ -92,7 +107,13 @@ async function main() {
     "docs/.nojekyll",
     "docs/index.html",
     "docs/assets/style.css",
+    "docs/assets/fonts/inter-latin-variable.woff2",
+    "docs/assets/fonts/newsreader-latin-variable.woff2",
+    "docs/assets/fonts/newsreader-latin-italic-variable.woff2",
     sampleImagePath,
+    sampleWebpImagePath,
+    ...supportImagePaths,
+    ...supportWebpImagePaths,
     "docs/public-parent-prompt.md",
     "docs/what-the-skill-produces.md",
     "samples/moon-following-car/package.md",
@@ -112,29 +133,102 @@ async function main() {
     throw new Error("SKILL.md must include a description");
   }
 
+  await requireNotContains(".codex-plugin/plugin.json", [
+    "learning packets"
+  ]);
+
   await requireContains("README.md", [
     "docs/index.html",
     "docs/public-parent-prompt.md",
+    "skills/wonder-together/agents/openai.yaml",
     "https://kbo4sho.github.io/wonder-together-skill/"
   ]);
 
   await requireContains("docs/index.html", [
     "Make every <span class=\"hand-underline\">&ldquo;why?&rdquo;</span> <span class=\"hero-line\">a moment together.</span>",
+    "Type your child&rsquo;s age and question. Wonder Together gives you",
     "assets/wonder-together-moon-explainer-single-scene.png",
+    "assets/wonder-together-moon-explainer-single-scene.webp",
     "codex plugin marketplace add kbo4sho/wonder-together-skill --ref main",
+    "mkdir -p .claude/skills",
     "https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together",
-    "promptText"
+    "Open in ChatGPT",
+    "Parent-led",
+    "No child account needed",
+    "Safety-aware activities",
+    "Tender questions handled gently",
+    "Three steps. No new app to learn.",
+    "Use the GPT",
+    "Copy the prompt",
+    "For builders",
+    "Why open source?",
+    "https://github.com/kbo4sho/wonder-together-skill",
+    "https://github.com/kbo4sho/wonder-together-skill/blob/main/LICENSE",
+    "public-parent-prompt.md",
+    "what-the-skill-produces.md",
+    "Kevin Bolander 2026",
+    "Recurring guides",
+    "Big Wonderer and Little Wonderer make each explainer feel familiar.",
+    "assets/wonder-together-wall-samples.png",
+    "assets/wonder-together-wall-samples.webp",
+    "loading=\"lazy\""
+  ]);
+
+  await requireNotContains("docs/index.html", [
+    "promptText",
+    "promptPreview",
+    "#prompt",
+    "Other agent",
+    "Start using it",
+    "Pick your platform",
+    "data-platform-tabs",
+    "platform-chatgpt",
+    "activatePlatformTab",
+    "assets/wonder-together-recurring-guides.png",
+    "assets/wonder-together-visual-thread.png"
+  ]);
+
+  await requireContains("docs/assets/style.css", [
+    "@font-face",
+    "fonts/inter-latin-variable.woff2",
+    "fonts/newsreader-latin-variable.woff2",
+    "fonts/newsreader-latin-italic-variable.woff2"
+  ]);
+
+  await requireNotContains("docs/assets/style.css", [
+    "fonts.googleapis.com"
   ]);
 
   await requireContains("docs/public-parent-prompt.md", [
     "You are Wonder Together",
     "one compact single-scene visual explainer",
     "For tender topics",
-    "For hazards"
+    "For hazards",
+    "Do not give medical, legal, financial, therapeutic, or emergency advice"
   ]);
 
-  await requirePublicPromptMirrored();
+  await requireContains("skills/wonder-together/agents/openai.yaml", [
+    "custom_gpt:",
+    "You are Wonder Together",
+    "child's question or topic",
+    "Generate exactly one single-scene image",
+    "Big Wonderer and Little Wonderer",
+    "Pebble Guides",
+    "For tender topics",
+    "For hazardous topics",
+    "Do not give medical, legal, financial, therapeutic, or emergency advice",
+    "Do not claim Wonder Together stores accounts"
+  ]);
+
+  await requirePublicPromptTextBlock();
   await requirePngDimensions(sampleImagePath, 1536, 1024);
+  await requireWebpFile(sampleWebpImagePath);
+  await Promise.all(
+    supportImagePaths.map((imagePath) => requirePngDimensions(imagePath, 1536, 1024))
+  );
+  await Promise.all(
+    supportWebpImagePaths.map(requireWebpFile)
+  );
 
   console.log("wonder-together-skill checks passed");
 }
