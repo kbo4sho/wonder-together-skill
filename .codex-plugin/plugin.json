@@ -1,20 +1,20 @@
 {
   "name": "wonder-together-skill",
   "version": "0.1.0",
-  "description": "Create Wonder Together parent-mediated learning packets, visual explainers, and gentle scripts from children's questions.",
+  "description": "Create Wonder Together compact parent-led visual explainers and gentle scripts from children's questions.",
   "author": {
     "name": "Kevin Bolander"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Wonder Together",
-    "shortDescription": "Create parent-led learning packets from children's questions.",
-    "longDescription": "Wonder Together packages a creator-facing skill for turning a child's question into a warm parent-mediated packet with story, explanation, visuals, activities, parent notes, and follow-up questions.",
+    "shortDescription": "Create compact visual explainers from children's questions.",
+    "longDescription": "Wonder Together packages a creator-facing skill for turning a child's question into a warm parent-mediated visual explainer with one image, what to notice, a tiny try-it idea, and a parent note. Fuller stories, games, or packets stay optional follow-ups.",
     "developerName": "Kevin Bolander",
     "category": "Education",
     "capabilities": [
       "Agent Skill"
     ],
-    "defaultPrompt": "Use $wonder-together to turn a child's question into a parent-led learning packet."
+    "defaultPrompt": "Use $wonder-together to turn a child's question into a compact parent-led visual explainer."
   }
 }
