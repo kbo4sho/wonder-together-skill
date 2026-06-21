@@ -17,6 +17,16 @@
       property="og:image"
       content="assets/wonder-together-moon-explainer-single-scene.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/wonder-together-gpt-icon-pebble-spark-512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/wonder-together-gpt-icon-pebble-spark-512.png"
+    />
     <link rel="stylesheet" href="assets/style.css?v=parent-first-20260615" />
   </head>
   <body>
@@ -25,6 +35,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="#how-it-works">How it works</a>
         <a href="#sample">Example</a>
+        <a href="#use">Use it</a>
         <a href="#fair-points">Fair points</a>
         <a
           class="nav-button"
@@ -67,7 +78,8 @@
             <span>Tender questions handled gently</span>
           </div>
           <p class="hero-note">
-            Start with the GPT. Builders can install the portable skill below.
+            Start with ChatGPT, Gemini, or the copyable public prompt. Builders
+            can install the portable skill below.
           </p>
         </div>
 
@@ -204,31 +216,47 @@
           <p class="kicker">Start here</p>
           <h2>
             Open Wonder Together<br />
-            <span>in ChatGPT.</span>
+            <span>where you already ask.</span>
           </h2>
           <p class="body-copy">
-            Use the ready-made GPT when you want the visual explainer and the
-            conversation flow in one place. Bring the child&rsquo;s age, the
-            question, and any parent context that changes the answer.
+            Use the ready-made GPT, create the Gemini Gem, or copy the public
+            prompt into the assistant you already use. Bring the child&rsquo;s age,
+            the question, and any parent context that changes the answer.
           </p>
         </div>
 
-        <article class="parent-start-card">
-          <div>
-            <p class="platform-fit">Best for parents</p>
-            <h3>Start with one question.</h3>
-            <p>
-              Wonder Together keeps the output compact: one image, what to
-              notice, a plain answer, one safe try-it idea, and a parent note.
-            </p>
-          </div>
-          <a
-            class="button primary"
-            href="https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together"
-          >
-            Open in ChatGPT
-          </a>
-        </article>
+        <div class="parent-start-grid" aria-label="Wonder Together parent start options">
+          <article class="parent-start-card">
+            <div>
+              <p class="platform-fit">Fastest start</p>
+              <h3>Use the Custom GPT.</h3>
+              <p>
+                Best when you want the visual explainer and conversation flow in
+                one place.
+              </p>
+            </div>
+            <a
+              class="button primary"
+              href="https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together"
+            >
+              Open in ChatGPT
+            </a>
+          </article>
+
+          <article class="parent-start-card">
+            <div>
+              <p class="platform-fit">Google path</p>
+              <h3>Create the Gemini Gem.</h3>
+              <p>
+                Use the public Gem instructions to make Wonder Together reusable
+                inside Gemini.
+              </p>
+            </div>
+            <a class="button" href="gemini-gem.html">
+              Set up Gemini
+            </a>
+          </article>
+        </div>
 
         <div class="builder-section" id="builders">
           <div class="builder-heading">
@@ -298,6 +326,10 @@ cp -R skills/wonder-together .claude/skills/</code></pre>
               <strong>Public prompt</strong>
               <span>Copy the portable parent-facing prompt.</span>
             </a>
+            <a href="gemini-gem.html">
+              <strong>Gemini Gem</strong>
+              <span>Create the reusable Gemini version.</span>
+            </a>
             <a href="what-the-skill-produces.md">
               <strong>What it produces</strong>
               <span>See the expected output shape.</span>
@@ -318,9 +350,10 @@ cp -R skills/wonder-together .claude/skills/</code></pre>
               <h3>How is this different from just asking ChatGPT?</h3>
               <p>
                 Wonder Together is a structured parent prompt, not a blank chat
-                box. It asks for the child&rsquo;s age and context, then shapes the
-                answer into a visual explainer, simple explanation, activity,
-                parent note, and follow-ups.
+                box. The ChatGPT GPT, Gemini Gem, and public prompt all ask for
+                the child&rsquo;s age and context, then shape the answer into a
+                visual explainer, simple explanation, activity, parent note, and
+                follow-ups.
               </p>
             </article>
 
@@ -349,8 +382,9 @@ cp -R skills/wonder-together .claude/skills/</code></pre>
               <p>
                 Not in this free toolkit version. If you use the Custom GPT, the
                 conversation happens inside ChatGPT under your account. If you
-                copy the prompt elsewhere, that platform&rsquo;s privacy and data
-                settings apply.
+                create or use the Gemini Gem, the conversation happens inside
+                Gemini under your Google account. If you copy the prompt
+                elsewhere, that platform&rsquo;s privacy and data settings apply.
               </p>
             </article>
           </div>
@@ -365,8 +399,8 @@ cp -R skills/wonder-together .claude/skills/</code></pre>
             <span>Feel ready.</span>
           </h2>
           <p class="body-copy">
-            Use the free toolkit in ChatGPT, or copy the prompt into whatever
-            assistant you already have.
+            Use the free toolkit in ChatGPT, set up the Gemini Gem, or copy the
+            prompt into whatever assistant you already have.
           </p>
           <div class="cta-row closing-cta-actions">
             <a
@@ -377,6 +411,9 @@ cp -R skills/wonder-together .claude/skills/</code></pre>
             </a>
             <a class="text-link" href="public-parent-prompt.md">
               Copy the prompt
+            </a>
+            <a class="text-link" href="gemini-gem.html">
+              Set up Gemini
             </a>
           </div>
         </div>
@@ -392,6 +429,7 @@ cp -R skills/wonder-together .claude/skills/</code></pre>
             <a href="https://github.com/kbo4sho/wonder-together-skill">GitHub</a>
             <a href="https://github.com/kbo4sho/wonder-together-skill/blob/main/LICENSE">License</a>
             <a href="public-parent-prompt.md">Public Prompt</a>
+            <a href="gemini-gem.html">Gemini Gem</a>
             <a href="what-the-skill-produces.md">What It Produces</a>
           </nav>
           <p class="footer-meta">
