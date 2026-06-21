@@ -11,7 +11,7 @@ Live Gem: [Open Wonder Together in Gemini](https://gemini.google.com/gem/afcecdb
 3. Use this description:
 
 ```text
-Generate one warm hand-drawn Pebble Guides image from a child's question.
+Turn a child's question into one compact parent-led visual explainer.
 ```
 
 4. Set the default tool to `Create image` / `Images`. Wonder Together prioritizes

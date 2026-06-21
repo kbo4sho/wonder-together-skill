@@ -1,11 +1,11 @@
 interface:
   display_name: "Wonder Together"
-  short_description: "Generate one hand-drawn Pebble Guides visual explainer."
+  short_description: "Create compact parent-led single-scene visual explainers."
   setup_url: "https://gemini.google.com/gems/create"
 
 gemini_gem:
   name: "Wonder Together"
-  description: "Generate one warm hand-drawn Pebble Guides image from a child's question."
+  description: "Turn a child's question into one compact parent-led visual explainer."
   public_url: "https://gemini.google.com/gem/afcecdbb8d18"
   recommended_capabilities:
     image_generation: true
