@@ -146,6 +146,7 @@ async function main() {
     "skills/wonder-together/agents/openai.yaml",
     "skills/wonder-together/agents/gemini.yaml",
     "docs/gemini-gem.md",
+    "https://gemini.google.com/gem/afcecdbb8d18",
     "https://kbo4sho.github.io/wonder-together-skill/"
   ]);
 
@@ -159,8 +160,9 @@ async function main() {
     "https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together",
     "Open in ChatGPT",
     "Gemini Gem",
-    "Set up Gemini",
-    "gemini-gem.html",
+    "https://gemini.google.com/gem/afcecdbb8d18",
+    "Open in Gemini",
+    "Open the Gemini Gem.",
     "Parent-led",
     "No child account needed",
     "Safety-aware activities",
@@ -193,7 +195,10 @@ async function main() {
     "platform-chatgpt",
     "activatePlatformTab",
     "assets/wonder-together-recurring-guides.png",
-    "assets/wonder-together-visual-thread.png"
+    "assets/wonder-together-visual-thread.png",
+    "Set up Gemini",
+    "gemini-gem.html",
+    "Create the Gemini Gem."
   ]);
 
   await requireContains("docs/assets/style.css", [
@@ -217,16 +222,24 @@ async function main() {
 
   await requireContains("docs/gemini-gem.md", [
     "Wonder Together Gemini Gem",
+    "https://gemini.google.com/gem/afcecdbb8d18",
     "https://gemini.google.com/gems/create",
     "skills/wonder-together/agents/gemini.yaml",
     "Gemini Gems are the closest Gemini equivalent to a Custom GPT",
+    "Create image",
+    "inline generated image",
+    "cream-paper Pebble Guides visual recipe",
     "If image generation is unavailable or rate-limited"
   ]);
 
   await requireContains("docs/gemini-gem.html", [
     "Wonder Together Gemini Gem Setup",
+    "https://gemini.google.com/gem/afcecdbb8d18",
     "https://gemini.google.com/gems/create",
-    "Create the Wonder Together Gemini Gem.",
+    "Open the Wonder Together Gemini Gem.",
+    "Open in Gemini",
+    "Use Create image.",
+    "Pebble Guides visual recipe",
     "Open instruction source",
     "skills/wonder-together/agents/gemini.yaml",
     "If Gemini cannot"
@@ -248,9 +261,22 @@ async function main() {
   await requireContains("skills/wonder-together/agents/gemini.yaml", [
     "gemini_gem:",
     "https://gemini.google.com/gems/create",
+    "public_url: \"https://gemini.google.com/gem/afcecdbb8d18\"",
+    "recommended_default_tool: \"Create image\"",
+    "Generate one warm hand-drawn Pebble Guides image from a child's question",
+    "Style accuracy matters more than surrounding text",
+    "Use the default Images / Create image tool whenever it is available",
+    "First action: generate exactly one inline single-scene image",
+    "Do not write an article, lesson, list, packet, or ordinary Gemini answer before the image",
+    "Treat this recipe as the actual image prompt",
+    "Warm hand-drawn field-guide illustration on cream paper; gentle illustrated diagram, not a photograph",
+    "Hard negatives for every image",
+    "realistic animal closeup",
     "You are Wonder Together",
     "child's question or topic",
-    "Generate exactly one single-scene image",
+    "Create a Wonder Together single-scene visual explainer about",
+    "If the first generated image does not clearly show both Pebble Guides",
+    "still create one image when image generation is available",
     "If Gemini cannot create an image",
     "Big Wonderer and Little Wonderer",
     "Pebble Guides",
