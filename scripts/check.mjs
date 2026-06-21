@@ -263,7 +263,7 @@ async function main() {
     "https://gemini.google.com/gems/create",
     "public_url: \"https://gemini.google.com/gem/afcecdbb8d18\"",
     "recommended_default_tool: \"Create image\"",
-    "Generate one warm hand-drawn Pebble Guides image from a child's question",
+    "Turn a child's question into one compact parent-led visual explainer",
     "Style accuracy matters more than surrounding text",
     "Use the default Images / Create image tool whenever it is available",
     "First action: generate exactly one inline single-scene image",
