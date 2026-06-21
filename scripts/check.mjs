@@ -98,6 +98,7 @@ async function main() {
   const requiredFiles = [
     "skills/wonder-together/SKILL.md",
     "skills/wonder-together/agents/openai.yaml",
+    "skills/wonder-together/agents/gemini.yaml",
     "skills/wonder-together/references/packet-contract.md",
     "skills/wonder-together/references/visual-language.md",
     "skills/wonder-together/references/safety-and-tenderness.md",
@@ -115,6 +116,8 @@ async function main() {
     ...supportImagePaths,
     ...supportWebpImagePaths,
     "docs/public-parent-prompt.md",
+    "docs/gemini-gem.md",
+    "docs/gemini-gem.html",
     "docs/what-the-skill-produces.md",
     "samples/moon-following-car/package.md",
     "samples/moon-following-car/character-sheet.png",
@@ -141,6 +144,8 @@ async function main() {
     "docs/index.html",
     "docs/public-parent-prompt.md",
     "skills/wonder-together/agents/openai.yaml",
+    "skills/wonder-together/agents/gemini.yaml",
+    "docs/gemini-gem.md",
     "https://kbo4sho.github.io/wonder-together-skill/"
   ]);
 
@@ -153,6 +158,9 @@ async function main() {
     "mkdir -p .claude/skills",
     "https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together",
     "Open in ChatGPT",
+    "Gemini Gem",
+    "Set up Gemini",
+    "gemini-gem.html",
     "Parent-led",
     "No child account needed",
     "Safety-aware activities",
@@ -207,6 +215,23 @@ async function main() {
     "Do not give medical, legal, financial, therapeutic, or emergency advice"
   ]);
 
+  await requireContains("docs/gemini-gem.md", [
+    "Wonder Together Gemini Gem",
+    "https://gemini.google.com/gems/create",
+    "skills/wonder-together/agents/gemini.yaml",
+    "Gemini Gems are the closest Gemini equivalent to a Custom GPT",
+    "If image generation is unavailable or rate-limited"
+  ]);
+
+  await requireContains("docs/gemini-gem.html", [
+    "Wonder Together Gemini Gem Setup",
+    "https://gemini.google.com/gems/create",
+    "Create the Wonder Together Gemini Gem.",
+    "Open instruction source",
+    "skills/wonder-together/agents/gemini.yaml",
+    "If Gemini cannot"
+  ]);
+
   await requireContains("skills/wonder-together/agents/openai.yaml", [
     "custom_gpt:",
     "You are Wonder Together",
@@ -218,6 +243,21 @@ async function main() {
     "For hazardous topics",
     "Do not give medical, legal, financial, therapeutic, or emergency advice",
     "Do not claim Wonder Together stores accounts"
+  ]);
+
+  await requireContains("skills/wonder-together/agents/gemini.yaml", [
+    "gemini_gem:",
+    "https://gemini.google.com/gems/create",
+    "You are Wonder Together",
+    "child's question or topic",
+    "Generate exactly one single-scene image",
+    "If Gemini cannot create an image",
+    "Big Wonderer and Little Wonderer",
+    "Pebble Guides",
+    "For tender topics",
+    "For hazardous topics",
+    "Do not give medical, legal, financial, therapeutic, or emergency advice",
+    "conversations happen inside Gemini under the user's Google account"
   ]);
 
   await requirePublicPromptTextBlock();

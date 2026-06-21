@@ -18,11 +18,16 @@ https://kbo4sho.github.io/wonder-together-skill/
 ```
 
 It explains the problem Wonder Together solves, shows the primary single-scene
-moon explainer image, links the Custom GPT, and points users toward supported
-platform paths. The portable prompt remains available for maintainers at
+moon explainer image, links the Custom GPT and Gemini Gem setup path, and points
+users toward supported platform paths. The portable prompt remains available for
+maintainers at
 [`docs/public-parent-prompt.md`](docs/public-parent-prompt.md).
 The repo-side Custom GPT instruction source lives at
 [`skills/wonder-together/agents/openai.yaml`](skills/wonder-together/agents/openai.yaml).
+The repo-side Gemini Gem instruction source lives at
+[`skills/wonder-together/agents/gemini.yaml`](skills/wonder-together/agents/gemini.yaml),
+with maintainer setup notes at [`docs/gemini-gem.md`](docs/gemini-gem.md)
+and a public setup page at [`docs/gemini-gem.html`](docs/gemini-gem.html).
 
 ## What It Does
 
@@ -51,6 +56,16 @@ For a fuller map of the current outputs, see
 [`docs/what-the-skill-produces.md`](docs/what-the-skill-produces.md).
 For the copyable assistant prompt, see
 [`docs/public-parent-prompt.md`](docs/public-parent-prompt.md).
+
+## Gemini Gem
+
+Gemini Gems are the closest Gemini equivalent to a Custom GPT: a reusable custom
+assistant with a name, description, instructions, and starters.
+
+Create the Gem from [`docs/gemini-gem.html`](docs/gemini-gem.html), using the
+public instruction source in
+[`skills/wonder-together/agents/gemini.yaml`](skills/wonder-together/agents/gemini.yaml).
+Publishing or sharing the Gem has to happen from the maintainer's Gemini account.
 
 ## Install In Codex
 

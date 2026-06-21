@@ -612,13 +612,19 @@ h3 {
   font-size: 1.0625rem;
 }
 
+.parent-start-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 58rem;
+  margin: 3.5rem auto 0;
+}
+
 .parent-start-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1.5rem;
   align-items: center;
-  max-width: 48rem;
-  margin: 3.5rem auto 0;
   min-width: 0;
   border: 1px solid var(--warm-line);
   border-radius: 1rem;
@@ -845,6 +851,42 @@ h3 {
   text-decoration: none;
 }
 
+.gemini-setup {
+  padding-top: 5rem;
+}
+
+.gemini-setup h1 {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gemini-setup-actions {
+  justify-content: center;
+}
+
+.gemini-setup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 58rem;
+  margin: 4rem auto 0;
+}
+
+.gemini-wide-card {
+  grid-column: 1 / -1;
+}
+
+.gemini-wide-card .button {
+  margin-top: 0.5rem;
+}
+
+.gemini-test-grid {
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .platform-fit {
   margin: 0;
   color: var(--warm-deep);
@@ -957,6 +999,7 @@ h3 {
   .split,
   .feature-inner,
   .open-source-inner,
+  .parent-start-grid,
   .faq-grid {
     grid-template-columns: 1fr;
   }
@@ -1053,8 +1096,13 @@ h3 {
 
   .builder-grid,
   .open-source-links,
+  .gemini-setup-grid,
   .faq-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gemini-wide-card {
+    grid-column: auto;
   }
 
   .builder-card,
