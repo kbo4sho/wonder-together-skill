@@ -1,21 +1,28 @@
 # Wonder Together Gemini Gem
 
-Use this page to create a Wonder Together Gem in Gemini.
+Use this page to open the live Wonder Together Gem or recreate it in Gemini.
 
-## Create The Gem
+Live Gem: [Open Wonder Together in Gemini](https://gemini.google.com/gem/afcecdbb8d18)
+
+## Maintainer Setup
 
 1. Open [Gemini Gems](https://gemini.google.com/gems/create).
 2. Create a new Gem named `Wonder Together`.
 3. Use this description:
 
 ```text
-Turn a child's question into one compact parent-led visual explainer.
+Generate one warm hand-drawn Pebble Guides image from a child's question.
 ```
 
-4. Copy the instructions from
+4. Set the default tool to `Create image` / `Images`. Wonder Together prioritizes
+   an inline generated image over surrounding explanatory text. The Gem
+   instructions are intentionally short and image-tool focused: every parent
+   message becomes a cream-paper Pebble Guides visual recipe before Gemini
+   generates the image.
+5. Copy the instructions from
    [`skills/wonder-together/agents/gemini.yaml`](https://github.com/kbo4sho/wonder-together-skill/blob/main/skills/wonder-together/agents/gemini.yaml),
    using the text under `gemini_gem.instructions`.
-5. Add these conversation starters:
+6. Add these conversation starters:
 
 ```text
 My child is 5 and asked why the moon follows our car.
@@ -24,8 +31,8 @@ My child asked if I will die someday. Help me answer gently.
 Make a Wonder Together explainer for a 6-year-old's question about rainbows.
 ```
 
-6. Save the Gem.
-7. Test it with one ordinary science question, one hazard question, and one
+7. Save the Gem.
+8. Test it with one ordinary science question, one hazard question, and one
    tender question before sharing.
 
 ## Sharing Notes
@@ -44,20 +51,21 @@ polished image prompt instead of blocking the parent.
 My child is 6 and asked why the moon follows our car.
 ```
 
-Expected behavior: one compact explainer with a single-scene moon/parallax image
-or prompt, two to four things to notice, one safe room-scale try-it idea, and a
-short parent note.
+Expected behavior: one inline single-scene moon/parallax image first, in the
+Wonder Together hand-drawn cream-paper field-guide style, with Big Wonderer and
+Little Wonderer visible as Pebble Guides. Supporting text should be minimal.
 
 ```text
 My child is 7 and asked where the electricity in the wall comes from.
 ```
 
-Expected behavior: no outlet, plug, wire, breaker, or appliance activity. Use a
-drawing, pretend path, or adult-only explanation instead.
+Expected behavior: one inline image first, with no outlet, plug, wire, breaker,
+or appliance activity. Use a drawn pretend path, adult-only context, or symbolic
+safe-distance visual instead.
 
 ```text
 My child is 5 and asked if I will die someday.
 ```
 
-Expected behavior: direct, gentle wording; no false promises; no cheerful game;
-skip generated imagery unless a symbolic prompt truly helps.
+Expected behavior: one gentle symbolic inline image first; direct, gentle
+wording; no false promises; no cheerful game.
