@@ -2,8 +2,18 @@ import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const sampleImagePath = "docs/assets/wonder-together-moon-explainer-single-scene.png";
-const sampleWebpImagePath = "docs/assets/wonder-together-moon-explainer-single-scene.webp";
+const sampleImagePaths = [
+  "docs/assets/wonder-together-moon-explainer-single-scene.png",
+  "docs/assets/wonder-together-rainbow-explainer.png",
+  "docs/assets/wonder-together-plant-light-explainer.png",
+  "docs/assets/wonder-together-map-path-explainer.png"
+];
+const sampleWebpImagePaths = [
+  "docs/assets/wonder-together-moon-explainer-single-scene.webp",
+  "docs/assets/wonder-together-rainbow-explainer.webp",
+  "docs/assets/wonder-together-plant-light-explainer.webp",
+  "docs/assets/wonder-together-map-path-explainer.webp"
+];
 const supportImagePaths = [
   "docs/assets/wonder-together-wall-samples.png"
 ];
@@ -111,8 +121,8 @@ async function main() {
     "docs/assets/fonts/inter-latin-variable.woff2",
     "docs/assets/fonts/newsreader-latin-variable.woff2",
     "docs/assets/fonts/newsreader-latin-italic-variable.woff2",
-    sampleImagePath,
-    sampleWebpImagePath,
+    ...sampleImagePaths,
+    ...sampleWebpImagePaths,
     ...supportImagePaths,
     ...supportWebpImagePaths,
     "docs/public-parent-prompt.md",
@@ -155,6 +165,21 @@ async function main() {
     "Type your child&rsquo;s age and question. Wonder Together gives you",
     "assets/wonder-together-moon-explainer-single-scene.png",
     "assets/wonder-together-moon-explainer-single-scene.webp",
+    "assets/wonder-together-rainbow-explainer.png",
+    "assets/wonder-together-rainbow-explainer.webp",
+    "assets/wonder-together-plant-light-explainer.png",
+    "assets/wonder-together-plant-light-explainer.webp",
+    "assets/wonder-together-map-path-explainer.png",
+    "assets/wonder-together-map-path-explainer.webp",
+    "Why do rainbows show up after rain?",
+    "How does a plant know where the sun is?",
+    "Why does the map line know where to go?",
+    "data-sample-carousel",
+    "data-sample-slide",
+    "data-sample-prev",
+    "data-sample-next",
+    "data-sample-dot",
+    "aria-live=\"polite\"",
     "codex plugin marketplace add kbo4sho/wonder-together-skill --ref main",
     "mkdir -p .claude/skills",
     "https://chatgpt.com/g/g-6a147d34e674819181c331f79c0e2e27-wonder-together",
@@ -287,8 +312,12 @@ async function main() {
   ]);
 
   await requirePublicPromptTextBlock();
-  await requirePngDimensions(sampleImagePath, 1536, 1024);
-  await requireWebpFile(sampleWebpImagePath);
+  await Promise.all(
+    sampleImagePaths.map((imagePath) => requirePngDimensions(imagePath, 1536, 1024))
+  );
+  await Promise.all(
+    sampleWebpImagePaths.map(requireWebpFile)
+  );
   await Promise.all(
     supportImagePaths.map((imagePath) => requirePngDimensions(imagePath, 1536, 1024))
   );
