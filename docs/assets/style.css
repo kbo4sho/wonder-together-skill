@@ -64,6 +64,16 @@ picture {
   display: block;
 }
 
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 a {
   color: inherit;
 }
@@ -130,7 +140,7 @@ textarea {
   max-width: var(--content-max);
   margin: 0 auto;
   overflow: hidden;
-  padding: 5rem 2rem 8rem;
+  padding: 5rem 2rem 7rem;
 }
 
 .hero-copy {
@@ -329,6 +339,10 @@ h3 {
   line-height: 1.25;
 }
 
+.sample-carousel h2 {
+  min-height: 3.45rem;
+}
+
 .sample-card-meta {
   margin: 0.25rem 0 1.25rem;
   border-bottom: 1px solid var(--warm-line);
@@ -336,6 +350,15 @@ h3 {
   color: rgba(90, 79, 48, 0.78);
   font-size: 0.75rem;
   font-style: italic;
+}
+
+.sample-slide[hidden],
+.sample-carousel-controls[hidden] {
+  display: none;
+}
+
+.sample-slide {
+  min-width: 0;
 }
 
 .artifact {
@@ -360,6 +383,7 @@ h3 {
   color: var(--ink);
   font-size: 0.9375rem;
   line-height: 1.55;
+  min-height: 10.15rem;
 }
 
 .sample-card-notes p {
@@ -368,6 +392,68 @@ h3 {
 
 .sample-card-notes p + p {
   margin-top: 0.72rem;
+}
+
+.sample-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  min-height: 2.5rem;
+  margin-top: 1rem;
+}
+
+.sample-carousel-button,
+.sample-carousel-dot {
+  appearance: none;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--warm-line);
+  border-radius: 999px;
+  background: #fffdf8;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.sample-carousel-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.sample-carousel-button:hover,
+.sample-carousel-dot:hover {
+  border-color: var(--warm);
+  color: var(--ink);
+}
+
+.sample-carousel-button:focus-visible,
+.sample-carousel-dot:focus-visible {
+  outline: 3px solid rgba(168, 117, 32, 0.32);
+  outline-offset: 0.2rem;
+}
+
+.sample-carousel-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-width: 7rem;
+}
+
+.sample-carousel-dot {
+  width: 0.78rem;
+  height: 0.78rem;
+  padding: 0;
+}
+
+.sample-carousel-dot.is-active {
+  border-color: var(--warm);
+  background: var(--warm);
 }
 
 .band {
@@ -1075,6 +1161,19 @@ h3 {
   .sample-card {
     padding: 1.45rem 1rem 1.25rem;
     transform: rotate(1deg);
+  }
+
+  .sample-carousel h2 {
+    min-height: auto;
+  }
+
+  .sample-card-notes {
+    min-height: auto;
+  }
+
+  .sample-carousel-button {
+    width: 2.75rem;
+    height: 2.75rem;
   }
 
   .output-grid {

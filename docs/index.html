@@ -27,7 +27,7 @@
       rel="apple-touch-icon"
       href="assets/wonder-together-gpt-icon-pebble-spark-512.png"
     />
-    <link rel="stylesheet" href="assets/style.css?v=parent-first-20260615" />
+    <link rel="stylesheet" href="assets/style.css?v=hero-carousel-20260703" />
   </head>
   <body>
     <header class="site-header">
@@ -83,41 +83,231 @@
           </p>
         </div>
 
-        <aside class="sample-card-shell" aria-label="Wonder Together example" data-sample-shell>
-          <article class="sample-card" id="sample" tabindex="-1">
-            <p class="sample-card-kicker">Real Example</p>
-            <h2>Why does the moon follow us when we drive?</h2>
-            <p class="sample-card-meta">For Leo, age 6</p>
-            <figure class="artifact">
-              <picture>
-                <source
-                  srcset="assets/wonder-together-moon-explainer-single-scene.webp"
-                  type="image/webp"
-                />
-                <img
-                  src="assets/wonder-together-moon-explainer-single-scene.png"
-                  alt="Wonder Together sample image showing Big Wonderer and Little Wonderer in a car, nearby things shifting quickly, and the far moon barely shifting."
-                  width="1536"
-                  height="1024"
-                  decoding="async"
-                  fetchpriority="high"
-                />
-              </picture>
-            </figure>
-            <div class="sample-card-notes">
-              <p>
-                <strong>Notice:</strong> close trees slide by fast; the far moon
-                barely shifts.
-              </p>
-              <p>
-                <strong>Core idea:</strong> far things seem to move less when
-                you move.
-              </p>
-              <p>
-                <strong>Try it together:</strong> hold your thumb near your
-                face, look at a toy across the room, then move your head side
-                to side.
-              </p>
+        <aside class="sample-card-shell" aria-label="Wonder Together examples" data-sample-shell>
+          <article
+            class="sample-card sample-carousel"
+            id="sample"
+            tabindex="-1"
+            data-sample-carousel
+            aria-roledescription="carousel"
+            aria-label="Wonder Together rotating examples"
+          >
+            <div class="sr-only" aria-live="polite" aria-atomic="true" data-sample-live>
+              Showing example 1 of 4: Why does the moon follow us when we drive?
+            </div>
+
+            <section
+              class="sample-slide is-active"
+              data-sample-slide
+              data-sample-title="Why does the moon follow us when we drive?"
+            >
+              <p class="sample-card-kicker">Real Example</p>
+              <h2>Why does the moon follow us when we drive?</h2>
+              <p class="sample-card-meta">For Leo, age 6</p>
+              <figure class="artifact">
+                <picture>
+                  <source
+                    srcset="assets/wonder-together-moon-explainer-single-scene.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/wonder-together-moon-explainer-single-scene.png"
+                    alt="Wonder Together sample image showing Big Wonderer and Little Wonderer in a car, nearby things shifting quickly, and the far moon barely shifting."
+                    width="1536"
+                    height="1024"
+                    decoding="async"
+                    fetchpriority="high"
+                  />
+                </picture>
+              </figure>
+              <div class="sample-card-notes">
+                <p>
+                  <strong>Notice:</strong> close trees slide by fast; the far moon
+                  barely shifts.
+                </p>
+                <p>
+                  <strong>Core idea:</strong> far things seem to move less when
+                  you move.
+                </p>
+                <p>
+                  <strong>Try it together:</strong> hold your thumb near your
+                  face, look at a toy across the room, then move your head side
+                  to side.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="sample-slide"
+              data-sample-slide
+              data-sample-title="Why do rainbows show up after rain?"
+              hidden
+            >
+              <p class="sample-card-kicker">Real Example</p>
+              <h2>Why do rainbows show up after rain?</h2>
+              <p class="sample-card-meta">For age 5</p>
+              <figure class="artifact">
+                <picture>
+                  <source
+                    srcset="assets/wonder-together-rainbow-explainer.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/wonder-together-rainbow-explainer.png"
+                    alt="Wonder Together sample image showing Big Wonderer and Little Wonderer watching sunlight pass through raindrops and spread into rainbow colors."
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </figure>
+              <div class="sample-card-notes">
+                <p>
+                  <strong>Notice:</strong> sunlight touches raindrops before the
+                  colors spread out.
+                </p>
+                <p>
+                  <strong>Core idea:</strong> raindrops bend sunlight and fan it
+                  into colors.
+                </p>
+                <p>
+                  <strong>Try it together:</strong> draw one white line going
+                  into a raindrop, then color a rainbow coming out.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="sample-slide"
+              data-sample-slide
+              data-sample-title="How does a plant know where the sun is?"
+              hidden
+            >
+              <p class="sample-card-kicker">Real Example</p>
+              <h2>How does a plant know where the sun is?</h2>
+              <p class="sample-card-meta">For age 7</p>
+              <figure class="artifact">
+                <picture>
+                  <source
+                    srcset="assets/wonder-together-plant-light-explainer.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/wonder-together-plant-light-explainer.png"
+                    alt="Wonder Together sample image showing Big Wonderer and Little Wonderer beside a potted plant bending toward sunlight from a window."
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </figure>
+              <div class="sample-card-notes">
+                <p>
+                  <strong>Notice:</strong> the stem curves toward the brightest
+                  light.
+                </p>
+                <p>
+                  <strong>Core idea:</strong> plants do not think like people;
+                  their growth changes direction toward light.
+                </p>
+                <p>
+                  <strong>Try it together:</strong> check one houseplant each
+                  morning and notice which way the leaves lean.
+                </p>
+              </div>
+            </section>
+
+            <section
+              class="sample-slide"
+              data-sample-slide
+              data-sample-title="Why does the map line know where to go?"
+              hidden
+            >
+              <p class="sample-card-kicker">Real Example</p>
+              <h2>Why does the map line know where to go?</h2>
+              <p class="sample-card-meta">For age 6</p>
+              <figure class="artifact">
+                <picture>
+                  <source
+                    srcset="assets/wonder-together-map-path-explainer.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/wonder-together-map-path-explainer.png"
+                    alt="Wonder Together sample image showing Big Wonderer and Little Wonderer looking at a map with connected roads and a highlighted best path."
+                    width="1536"
+                    height="1024"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </figure>
+              <div class="sample-card-notes">
+                <p>
+                  <strong>Notice:</strong> faint roads connect, while one path
+                  is highlighted.
+                </p>
+                <p>
+                  <strong>Core idea:</strong> map apps compare connected roads
+                  and choose a path to the destination.
+                </p>
+                <p>
+                  <strong>Try it together:</strong> draw three pretend roads to
+                  a toy, then trace the one you would choose.
+                </p>
+              </div>
+            </section>
+
+            <div class="sample-carousel-controls" data-sample-controls hidden>
+              <button
+                class="sample-carousel-button"
+                type="button"
+                data-sample-prev
+                aria-label="Show previous example"
+              >
+                <span aria-hidden="true">&lsaquo;</span>
+              </button>
+              <div class="sample-carousel-dots" aria-label="Wonder Together examples">
+                <button
+                  class="sample-carousel-dot is-active"
+                  type="button"
+                  data-sample-dot
+                  data-sample-index="0"
+                  aria-label="Show moon example"
+                  aria-current="true"
+                ></button>
+                <button
+                  class="sample-carousel-dot"
+                  type="button"
+                  data-sample-dot
+                  data-sample-index="1"
+                  aria-label="Show rainbow example"
+                ></button>
+                <button
+                  class="sample-carousel-dot"
+                  type="button"
+                  data-sample-dot
+                  data-sample-index="2"
+                  aria-label="Show plant example"
+                ></button>
+                <button
+                  class="sample-carousel-dot"
+                  type="button"
+                  data-sample-dot
+                  data-sample-index="3"
+                  aria-label="Show map example"
+                ></button>
+              </div>
+              <button
+                class="sample-carousel-button"
+                type="button"
+                data-sample-next
+                aria-label="Show next example"
+              >
+                <span aria-hidden="true">&rsaquo;</span>
+              </button>
             </div>
           </article>
         </aside>
@@ -442,8 +632,121 @@ cp -R skills/wonder-together .claude/skills/</code></pre>
       const sampleLink = document.querySelector("[data-present-sample]");
       const sampleShell = document.querySelector("[data-sample-shell]");
       const sampleCard = document.querySelector("#sample");
+      const sampleCarousel = document.querySelector("[data-sample-carousel]");
+      const sampleSlides = Array.from(document.querySelectorAll("[data-sample-slide]"));
+      const sampleControls = document.querySelector("[data-sample-controls]");
+      const sampleDots = Array.from(document.querySelectorAll("[data-sample-dot]"));
+      const samplePreviousButton = document.querySelector("[data-sample-prev]");
+      const sampleNextButton = document.querySelector("[data-sample-next]");
+      const sampleLive = document.querySelector("[data-sample-live]");
       const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const sampleRotationMs = 7000;
+      let activeSampleIndex = 0;
+      let sampleRotationTimeout;
       let samplePresentationTimeout;
+      let sampleIsPaused = false;
+
+      function getSampleTitle(index) {
+        return sampleSlides[index]?.dataset.sampleTitle || "Wonder Together example";
+      }
+
+      function updateSample(index, announce = false) {
+        if (!sampleSlides.length) {
+          return;
+        }
+
+        activeSampleIndex = (index + sampleSlides.length) % sampleSlides.length;
+
+        sampleSlides.forEach((slide, slideIndex) => {
+          const isActive = slideIndex === activeSampleIndex;
+          slide.hidden = !isActive;
+          slide.classList.toggle("is-active", isActive);
+        });
+
+        sampleDots.forEach((dot, dotIndex) => {
+          const isActive = dotIndex === activeSampleIndex;
+          dot.classList.toggle("is-active", isActive);
+          if (isActive) {
+            dot.setAttribute("aria-current", "true");
+          } else {
+            dot.removeAttribute("aria-current");
+          }
+        });
+
+        if (announce && sampleLive) {
+          sampleLive.textContent = `Showing example ${activeSampleIndex + 1} of ${sampleSlides.length}: ${getSampleTitle(activeSampleIndex)}`;
+        }
+      }
+
+      function stopSampleRotation() {
+        window.clearTimeout(sampleRotationTimeout);
+      }
+
+      function scheduleSampleRotation() {
+        stopSampleRotation();
+        if (reducedMotionQuery.matches || sampleIsPaused || sampleSlides.length < 2) {
+          return;
+        }
+
+        sampleRotationTimeout = window.setTimeout(() => {
+          updateSample(activeSampleIndex + 1, false);
+          scheduleSampleRotation();
+        }, sampleRotationMs);
+      }
+
+      function goToSample(index) {
+        updateSample(index, true);
+        scheduleSampleRotation();
+      }
+
+      if (sampleCarousel && sampleSlides.length > 1) {
+        sampleCarousel.classList.add("is-enhanced");
+        if (sampleControls) {
+          sampleControls.hidden = false;
+        }
+
+        samplePreviousButton?.addEventListener("click", () => {
+          goToSample(activeSampleIndex - 1);
+        });
+
+        sampleNextButton?.addEventListener("click", () => {
+          goToSample(activeSampleIndex + 1);
+        });
+
+        sampleDots.forEach((dot) => {
+          dot.addEventListener("click", () => {
+            goToSample(Number(dot.dataset.sampleIndex || 0));
+          });
+        });
+
+        sampleCarousel.addEventListener("mouseenter", () => {
+          sampleIsPaused = true;
+          stopSampleRotation();
+        });
+
+        sampleCarousel.addEventListener("mouseleave", () => {
+          sampleIsPaused = false;
+          scheduleSampleRotation();
+        });
+
+        sampleCarousel.addEventListener("focusin", () => {
+          sampleIsPaused = true;
+          stopSampleRotation();
+        });
+
+        sampleCarousel.addEventListener("focusout", (event) => {
+          if (!sampleCarousel.contains(event.relatedTarget)) {
+            sampleIsPaused = false;
+            scheduleSampleRotation();
+          }
+        });
+
+        reducedMotionQuery.addEventListener("change", () => {
+          scheduleSampleRotation();
+        });
+
+        scheduleSampleRotation();
+      }
 
       function presentSampleCard() {
         if (!sampleShell || !sampleCard) {
