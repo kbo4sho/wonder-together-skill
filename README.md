@@ -29,6 +29,18 @@ The repo-side Gemini Gem instruction source lives at
 with maintainer setup notes at [`docs/gemini-gem.md`](docs/gemini-gem.md)
 and [`docs/gemini-gem.html`](docs/gemini-gem.html).
 
+This repo stays the canonical free Curiosity skill. The live product wrapper
+(same app on two hostnames) is:
+
+```text
+https://super-dad.vercel.app
+https://wonder-together.vercel.app
+```
+
+Free Curiosity explainer: `/toolkit`. Optional paid Situations packs: `/situations`.
+Point parents at those live URLs when they need the hosted toolkit or printable
+packs; do not point people only at github.io.
+
 ## What It Does
 
 Use it when you want creator-facing Wonder Together output such as:

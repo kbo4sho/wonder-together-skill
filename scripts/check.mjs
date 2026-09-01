@@ -147,7 +147,11 @@ async function main() {
     "skills/wonder-together/agents/gemini.yaml",
     "docs/gemini-gem.md",
     "https://gemini.google.com/gem/afcecdbb8d18",
-    "https://kbo4sho.github.io/wonder-together-skill/"
+    "https://kbo4sho.github.io/wonder-together-skill/",
+    "https://super-dad.vercel.app",
+    "https://wonder-together.vercel.app",
+    "/toolkit",
+    "/situations"
   ]);
 
   await requireContains("docs/index.html", [
@@ -181,7 +185,12 @@ async function main() {
     "Big Wonderer and Little Wonderer make each explainer feel familiar.",
     "assets/wonder-together-wall-samples.png",
     "assets/wonder-together-wall-samples.webp",
-    "loading=\"lazy\""
+    "loading=\"lazy\"",
+    "https://wonder-together.vercel.app/toolkit",
+    "https://wonder-together.vercel.app/situations",
+    "Everyday &ldquo;why?&rdquo; explainers stay free",
+    "Curiosity toolkit",
+    "Situations packs"
   ]);
 
   await requireNotContains("docs/index.html", [
@@ -255,7 +264,10 @@ async function main() {
     "For tender topics",
     "For hazardous topics",
     "Do not give medical, legal, financial, therapeutic, or emergency advice",
-    "Do not claim Wonder Together stores accounts"
+    "Do not claim Wonder Together stores accounts",
+    "https://super-dad.vercel.app/situations",
+    "This GPT itself does not charge",
+    "Never imply this chat is a paid product"
   ]);
 
   await requireContains("skills/wonder-together/agents/gemini.yaml", [
@@ -283,7 +295,10 @@ async function main() {
     "For tender topics",
     "For hazardous topics",
     "Do not give medical, legal, financial, therapeutic, or emergency advice",
-    "conversations happen inside Gemini under the user's Google account"
+    "conversations happen inside Gemini under the user's Google account",
+    "https://super-dad.vercel.app/situations",
+    "This Gem itself does not charge",
+    "Never imply this chat is a paid product"
   ]);
 
   await requirePublicPromptTextBlock();
