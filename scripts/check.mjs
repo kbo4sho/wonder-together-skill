@@ -20,6 +20,14 @@ async function readJson(relativePath) {
   }
 }
 
+async function requireMissing(relativePath) {
+  const fullPath = path.join(root, relativePath);
+  const info = await stat(fullPath).catch(() => null);
+  if (info) {
+    throw new Error(`Must not exist (would redirect or replace github.io): ${relativePath}`);
+  }
+}
+
 async function requireFile(relativePath) {
   const fullPath = path.join(root, relativePath);
   const info = await stat(fullPath).catch(() => null);
@@ -127,6 +135,14 @@ async function main() {
   ];
 
   await Promise.all(requiredFiles.map(requireFile));
+  await Promise.all([
+    "CNAME",
+    "docs/CNAME",
+    "_redirects",
+    "docs/_redirects",
+    "vercel.json",
+    "docs/vercel.json"
+  ].map(requireMissing));
 
   const skill = await readFile(path.join(root, "skills/wonder-together/SKILL.md"), "utf8");
   if (!skill.includes("name: wonder-together")) {
@@ -150,8 +166,9 @@ async function main() {
     "https://kbo4sho.github.io/wonder-together-skill/",
     "https://super-dad.vercel.app",
     "https://wonder-together.vercel.app",
-    "/toolkit",
-    "/situations"
+    "Do not redirect it",
+    "https://super-dad.vercel.app/toolkit",
+    "https://super-dad.vercel.app/situations"
   ]);
 
   await requireContains("docs/index.html", [
@@ -186,8 +203,8 @@ async function main() {
     "assets/wonder-together-wall-samples.png",
     "assets/wonder-together-wall-samples.webp",
     "loading=\"lazy\"",
-    "https://wonder-together.vercel.app/toolkit",
-    "https://wonder-together.vercel.app/situations",
+    "https://super-dad.vercel.app/toolkit",
+    "https://super-dad.vercel.app/situations",
     "Everyday &ldquo;why?&rdquo; explainers stay free",
     "Curiosity toolkit",
     "Situations packs"
@@ -207,7 +224,12 @@ async function main() {
     "assets/wonder-together-visual-thread.png",
     "Set up Gemini",
     "gemini-gem.html",
-    "Create the Gemini Gem."
+    "Create the Gemini Gem.",
+    "http-equiv",
+    "window.location",
+    "rel=\"canonical\"",
+    "wonder-together.vercel.app/toolkit",
+    "wonder-together.vercel.app/situations"
   ]);
 
   await requireContains("docs/assets/style.css", [
