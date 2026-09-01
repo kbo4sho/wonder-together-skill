@@ -42,9 +42,10 @@ https://wonder-together.vercel.app
 ```
 
 Free Curiosity explainer: `/toolkit`. Optional paid Situations packs: `/situations`.
-On the public OSS page, mention those live URLs only as a secondary door
-(`https://super-dad.vercel.app/toolkit` and
-`https://super-dad.vercel.app/situations`). Keep GPT, Gem, and the public prompt
+The public CTA hostname is `https://wonder-together.vercel.app`. On the public OSS
+page, mention those live URLs only as a secondary door
+(`https://wonder-together.vercel.app/toolkit` and
+`https://wonder-together.vercel.app/situations`). Keep GPT, Gem, and the public prompt
 as the primary CTAs.
 
 ## What It Does
