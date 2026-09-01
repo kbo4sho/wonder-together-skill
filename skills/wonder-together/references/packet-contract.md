@@ -69,5 +69,8 @@ step.
 - Generic tiny mascots or named particles that replace the real concept.
 - Full packets by default.
 - Multiple generated images by default.
-- Claims that Wonder Together stores accounts, creates private links, charges
-  money, or requires a backend.
+- Claims that this chat stores accounts, creates private links, charges for the
+  explainer, or requires a backend. Optional Wonder Situations packs for hard or
+  new moments may be mentioned with a link to
+  https://wonder-together.vercel.app/situations; do not imply this chat is a paid
+  product.

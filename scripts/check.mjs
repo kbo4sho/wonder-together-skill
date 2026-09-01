@@ -20,6 +20,14 @@ async function readJson(relativePath) {
   }
 }
 
+async function requireMissing(relativePath) {
+  const fullPath = path.join(root, relativePath);
+  const info = await stat(fullPath).catch(() => null);
+  if (info) {
+    throw new Error(`Must not exist (would redirect or replace github.io): ${relativePath}`);
+  }
+}
+
 async function requireFile(relativePath) {
   const fullPath = path.join(root, relativePath);
   const info = await stat(fullPath).catch(() => null);
@@ -127,6 +135,14 @@ async function main() {
   ];
 
   await Promise.all(requiredFiles.map(requireFile));
+  await Promise.all([
+    "CNAME",
+    "docs/CNAME",
+    "_redirects",
+    "docs/_redirects",
+    "vercel.json",
+    "docs/vercel.json"
+  ].map(requireMissing));
 
   const skill = await readFile(path.join(root, "skills/wonder-together/SKILL.md"), "utf8");
   if (!skill.includes("name: wonder-together")) {
@@ -147,7 +163,13 @@ async function main() {
     "skills/wonder-together/agents/gemini.yaml",
     "docs/gemini-gem.md",
     "https://gemini.google.com/gem/afcecdbb8d18",
-    "https://kbo4sho.github.io/wonder-together-skill/"
+    "https://kbo4sho.github.io/wonder-together-skill/",
+    "https://super-dad.vercel.app",
+    "https://wonder-together.vercel.app",
+    "Do not redirect it",
+    "https://wonder-together.vercel.app/toolkit",
+    "https://wonder-together.vercel.app/situations",
+    "The public CTA hostname is"
   ]);
 
   await requireContains("docs/index.html", [
@@ -181,7 +203,12 @@ async function main() {
     "Big Wonderer and Little Wonderer make each explainer feel familiar.",
     "assets/wonder-together-wall-samples.png",
     "assets/wonder-together-wall-samples.webp",
-    "loading=\"lazy\""
+    "loading=\"lazy\"",
+    "https://wonder-together.vercel.app/toolkit",
+    "https://wonder-together.vercel.app/situations",
+    "Everyday &ldquo;why?&rdquo; explainers stay free",
+    "Curiosity toolkit",
+    "Situations packs"
   ]);
 
   await requireNotContains("docs/index.html", [
@@ -198,7 +225,12 @@ async function main() {
     "assets/wonder-together-visual-thread.png",
     "Set up Gemini",
     "gemini-gem.html",
-    "Create the Gemini Gem."
+    "Create the Gemini Gem.",
+    "http-equiv",
+    "window.location",
+    "rel=\"canonical\"",
+    "super-dad.vercel.app/toolkit",
+    "super-dad.vercel.app/situations"
   ]);
 
   await requireContains("docs/assets/style.css", [
@@ -255,7 +287,15 @@ async function main() {
     "For tender topics",
     "For hazardous topics",
     "Do not give medical, legal, financial, therapeutic, or emergency advice",
-    "Do not claim Wonder Together stores accounts"
+    "Do not claim Wonder Together stores accounts",
+    "https://wonder-together.vercel.app/situations",
+    "This GPT itself does not charge",
+    "Never imply this chat is a paid product"
+  ]);
+
+  await requireNotContains("skills/wonder-together/agents/openai.yaml", [
+    "super-dad.vercel.app/toolkit",
+    "super-dad.vercel.app/situations"
   ]);
 
   await requireContains("skills/wonder-together/agents/gemini.yaml", [
@@ -283,7 +323,15 @@ async function main() {
     "For tender topics",
     "For hazardous topics",
     "Do not give medical, legal, financial, therapeutic, or emergency advice",
-    "conversations happen inside Gemini under the user's Google account"
+    "conversations happen inside Gemini under the user's Google account",
+    "https://wonder-together.vercel.app/situations",
+    "This Gem itself does not charge",
+    "Never imply this chat is a paid product"
+  ]);
+
+  await requireNotContains("skills/wonder-together/agents/gemini.yaml", [
+    "super-dad.vercel.app/toolkit",
+    "super-dad.vercel.app/situations"
   ]);
 
   await requirePublicPromptTextBlock();
