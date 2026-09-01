@@ -72,5 +72,5 @@ step.
 - Claims that this chat stores accounts, creates private links, charges for the
   explainer, or requires a backend. Optional Wonder Situations packs for hard or
   new moments may be mentioned with a link to
-  https://super-dad.vercel.app/situations; do not imply this chat is a paid
+  https://wonder-together.vercel.app/situations; do not imply this chat is a paid
   product.

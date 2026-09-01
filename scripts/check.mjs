@@ -167,8 +167,9 @@ async function main() {
     "https://super-dad.vercel.app",
     "https://wonder-together.vercel.app",
     "Do not redirect it",
-    "https://super-dad.vercel.app/toolkit",
-    "https://super-dad.vercel.app/situations"
+    "https://wonder-together.vercel.app/toolkit",
+    "https://wonder-together.vercel.app/situations",
+    "The public CTA hostname is"
   ]);
 
   await requireContains("docs/index.html", [
@@ -203,8 +204,8 @@ async function main() {
     "assets/wonder-together-wall-samples.png",
     "assets/wonder-together-wall-samples.webp",
     "loading=\"lazy\"",
-    "https://super-dad.vercel.app/toolkit",
-    "https://super-dad.vercel.app/situations",
+    "https://wonder-together.vercel.app/toolkit",
+    "https://wonder-together.vercel.app/situations",
     "Everyday &ldquo;why?&rdquo; explainers stay free",
     "Curiosity toolkit",
     "Situations packs"
@@ -228,8 +229,8 @@ async function main() {
     "http-equiv",
     "window.location",
     "rel=\"canonical\"",
-    "wonder-together.vercel.app/toolkit",
-    "wonder-together.vercel.app/situations"
+    "super-dad.vercel.app/toolkit",
+    "super-dad.vercel.app/situations"
   ]);
 
   await requireContains("docs/assets/style.css", [
@@ -287,9 +288,14 @@ async function main() {
     "For hazardous topics",
     "Do not give medical, legal, financial, therapeutic, or emergency advice",
     "Do not claim Wonder Together stores accounts",
-    "https://super-dad.vercel.app/situations",
+    "https://wonder-together.vercel.app/situations",
     "This GPT itself does not charge",
     "Never imply this chat is a paid product"
+  ]);
+
+  await requireNotContains("skills/wonder-together/agents/openai.yaml", [
+    "super-dad.vercel.app/toolkit",
+    "super-dad.vercel.app/situations"
   ]);
 
   await requireContains("skills/wonder-together/agents/gemini.yaml", [
@@ -318,9 +324,14 @@ async function main() {
     "For hazardous topics",
     "Do not give medical, legal, financial, therapeutic, or emergency advice",
     "conversations happen inside Gemini under the user's Google account",
-    "https://super-dad.vercel.app/situations",
+    "https://wonder-together.vercel.app/situations",
     "This Gem itself does not charge",
     "Never imply this chat is a paid product"
+  ]);
+
+  await requireNotContains("skills/wonder-together/agents/gemini.yaml", [
+    "super-dad.vercel.app/toolkit",
+    "super-dad.vercel.app/situations"
   ]);
 
   await requirePublicPromptTextBlock();
