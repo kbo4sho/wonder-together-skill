@@ -29,6 +29,10 @@ The repo-side Gemini Gem instruction source lives at
 with maintainer setup notes at [`docs/gemini-gem.md`](docs/gemini-gem.md)
 and [`docs/gemini-gem.html`](docs/gemini-gem.html).
 
+`https://kbo4sho.github.io/wonder-together-skill/` stays the public OSS skill
+page. Do not redirect it, meta-refresh it, or swap its canonical URL to Vercel
+or anywhere else. LinkedIn and the portfolio may keep pointing at github.io.
+
 This repo stays the canonical free Curiosity skill. The live product wrapper
 (same app on two hostnames) is:
 
@@ -38,8 +42,10 @@ https://wonder-together.vercel.app
 ```
 
 Free Curiosity explainer: `/toolkit`. Optional paid Situations packs: `/situations`.
-Point parents at those live URLs when they need the hosted toolkit or printable
-packs; do not point people only at github.io.
+On the public OSS page, mention those live URLs only as a secondary door
+(`https://super-dad.vercel.app/toolkit` and
+`https://super-dad.vercel.app/situations`). Keep GPT, Gem, and the public prompt
+as the primary CTAs.
 
 ## What It Does
 
